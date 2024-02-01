@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { RouterOutlet } from '@angular/router';
+
 import { HeaderComponent } from './shared/components/header/header.component';
 
 @Component({
@@ -12,5 +12,4 @@ import { HeaderComponent } from './shared/components/header/header.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'currency-converter';
 }

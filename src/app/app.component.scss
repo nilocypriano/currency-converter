@@ -1,0 +1,18 @@
+.currency-card-container {
+  background-color: #EEE;
+  display: grid;
+  height: auto;
+  gap: 1rem;
+  width: 100%;
+  padding-top: 130px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+@media (min-width: 1000px) {
+  .currency-card-container {
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+}
