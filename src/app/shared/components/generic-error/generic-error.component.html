@@ -1,0 +1,12 @@
+<ng-template #defaultErrorTemplate>
+  <div class="error-container">
+    <span class="error-container__message">{{ errorMessage }}</span>
+    <button (click)="handleError.emit()" class="error-container__button">
+      {{ buttonLabel | uppercase }}
+    </button>
+  </div>
+</ng-template>
+
+<ng-container
+  *ngTemplateOutlet="customErrorTemplate || defaultErrorTemplate"
+></ng-container>
