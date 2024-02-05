@@ -1,0 +1,23 @@
+@if(currency) {
+<div class="currency-card">
+  <app-currency-card-header
+    [headerTitle]="currency.name"
+  ></app-currency-card-header>
+
+  @defer() { @if(currency.bid) {
+  <app-currency-card-content [price]="currency.bid">
+  </app-currency-card-content>
+
+  <app-currency-card-footer
+    [updatedAt]="currency.updatedAt"
+    [quotationVariation]="currency.varBid"
+  >
+  </app-currency-card-footer>
+
+  } @else {
+  <app-generic-error (handleError)="handleError.emit()"></app-generic-error>
+  } } @placeholder (minimum 1s){
+  <app-loader></app-loader>
+  }
+</div>
+}
