@@ -1,0 +1,16 @@
+.currency-card-header {
+  display: flex;
+  align-items: center;
+  background-color: #F6F6F6;
+  height: 119px;
+  border-radius: 10px 10px 0 0;
+
+  &__title {
+    color: #717171;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+}
