@@ -1,0 +1,14 @@
+.currency-card-content {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__price {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 96px;
+    margin: 0 auto;
+  }
+}
