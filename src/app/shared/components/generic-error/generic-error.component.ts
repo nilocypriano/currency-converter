@@ -1,10 +1,10 @@
 import { Component, EventEmitter, Input, Output, TemplateRef } from '@angular/core';
-import { UpperCasePipe } from '@angular/common';
+import { NgTemplateOutlet, UpperCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-generic-error',
   standalone: true,
-  imports: [UpperCasePipe],
+  imports: [NgTemplateOutlet, UpperCasePipe],
   templateUrl: './generic-error.component.html',
   styleUrl: './generic-error.component.scss'
 })
