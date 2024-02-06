@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output, TemplateRef } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, TemplateRef } from '@angular/core';
 import { NgTemplateOutlet, UpperCasePipe } from '@angular/common';
 
 @Component({
@@ -6,7 +6,8 @@ import { NgTemplateOutlet, UpperCasePipe } from '@angular/common';
   standalone: true,
   imports: [NgTemplateOutlet, UpperCasePipe],
   templateUrl: './generic-error.component.html',
-  styleUrl: './generic-error.component.scss'
+  styleUrl: './generic-error.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GenericErrorComponent {
   @Input() customErrorTemplate?: TemplateRef<any>;
