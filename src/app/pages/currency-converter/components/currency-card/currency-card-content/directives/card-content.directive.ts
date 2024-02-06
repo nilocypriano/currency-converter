@@ -18,12 +18,12 @@ export class CardContentDirective {
       const numericValue = +value;
 
       const colorMap = {
-        'red': numericValue <= 1,
-        'green': numericValue > 5,
-        'blue': !(numericValue <= 1 || numericValue > 5)
+        '#DD4B4B': numericValue <= 1,
+        '#3C7649': numericValue > 5,
+        '#3684CB': !(numericValue <= 1 || numericValue > 5)
       };
 
-      const color = (Object.keys(colorMap) as Array<'red' | 'green' | 'blue'>).find((key) => colorMap[key]);
+      const color = (Object.keys(colorMap) as Array<'#DD4B4B' | '#3C7649' | '#3C7649'>).find((key) => colorMap[key]);
 
       this.fontColor = color;
     }
