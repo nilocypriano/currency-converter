@@ -64,8 +64,7 @@ Valores maiores que R$1,00 e menores ou igual a R$5,00
 Valores maiores que R$5,00
 
 ### CurrencyCardFooter
-Exibe detalhes da cotação. Atualmente, como comportamento padrão, exibe o valor de variação em porcentagem e a hora de atualização. É possível inserir um template customizado através da projeção de conteúdo.
-
+Exibe detalhes da cotação. Atualmente, como comportamento padrão, exibe o valor de variação em porcentagem e a hora de atualização.  </br></br>
 ![image](https://github.com/nilocypriano/currency-converter/assets/62026241/b7428901-a3a1-4743-bdb1-07f93d99b8ab)
 
 
