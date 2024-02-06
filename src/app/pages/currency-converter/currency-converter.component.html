@@ -1,3 +1,8 @@
 <div class="currency-card-container">
-  <p>{{ currencies$ | async }}</p>
+  @for(currency of currencies() ; track currency.code){
+  <app-currency-card
+    [currency]="currency"
+    (handleError)="setCurrencies()"
+  ></app-currency-card>
+  }
 </div>
